@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.QI_NglFKrsu5to98Bt1dCQHaHa?pid=ImgDet&rs=1">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.QI_NglFKrsu5to98Bt1dCQHaHa?pid=ImgDet&rs=1"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Tic Tac Toe Game</h1>
+    <div class="main">
+        <div class="container">
+            <div class="r1 row">
+                <div class="a11 box" id="a11" onclick="printXor0(a11)">
+                    
+                </div>
+                <div class="a12 box" id="a12" onclick="printXor0(a12)">
+                    
+                </div>
+                <div class="a13 box" id="a13" onclick="printXor0(a13)">
+                    
+                </div>
+            </div>
+            <div class="r2 row">
+                <div class="a21 box" id="a21" onclick="printXor0(a21)">
+                    
+                </div>
+                <div class="a22 box" id="a22" onclick="printXor0(a22)">
+                    
+                </div>
+                <div class="a23 box" id="a23" onclick="printXor0(a23)">
+                    
+                </div>
+            </div>
+            <div class="r3 row">
+                <div class="a31 box" id="a31" onclick="printXor0(a31)">
+                    
+                </div>
+                <div class="a32 box" id="a32" onclick="printXor0(a32)">
+                    
+                </div>
+                <div class="a33 box" id="a33" onclick="printXor0(a33)">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <h2>Enter Players' Name</h2>
+            <!-- <div class="pInfo">Enter Players' Name</div> -->
+            <input type="text" id="playerA" value="Player A">
+            <input type="text" id="playerB" value="Player B">
+            <div class="submitBtn">
+                <button class="btn" id="submitBtn" onclick="boxDisable()">Submit</button>
+            </div>
+            <h2>Game Status</h2>
+            <div class="turn" id="turn"></div>
+            <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
+            <button class="btn" onClick="window.location.reload()">Reset Game</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

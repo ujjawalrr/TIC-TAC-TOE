@@ -1,0 +1,122 @@
+@media screen and (max-width : 767px) {
+    .container {
+        width: 80vw;
+        height: 80vw;
+        background-color: rgb(228, 228, 142);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .info {
+        width: 80vw;
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width : 768px) and (max-width : 1023px) {
+    .container {
+        width: 60vw;
+        height: 60vw;
+        background-color: rgb(228, 228, 142);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+    .info {
+        width: 30vw;
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width : 1024px) {
+    .container {
+        width: 40vw;
+        height: 40vw;
+        background-color: rgb(228, 228, 142);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+    .info {
+        width: 30vw;
+        margin-top: 2rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background: #cc2b5e;
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+    background: linear-gradient(90deg, #753a88, #cc2b5e);
+    font-family: "Montserrat", serif;
+}
+h1 {
+    font-family: "Merriweather", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.box {
+    border: 0.2rem solid green;
+    display: flex;
+    flex: 33.33%;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    cursor: pointer;
+}
+.box:hover {
+    background-color: rgb(220, 220, 87);   
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 33.33%;
+}
+.btn {
+    padding: 0.6rem 2rem;
+    background: rgb(70, 129, 152);
+    color: white;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.btn:hover {
+    background: rgb(39, 109, 137);
+}
+.turn {
+    width: 25vw;
+    min-height: 4vw;
+    background: white;
+    margin: 2rem 0rem;
+    padding: 0.6rem;
+}
+input {
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.turn {
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+.submitBtn {
+    display: flex;
+    justify-content: center;
+}
