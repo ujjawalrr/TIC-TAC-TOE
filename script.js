@@ -9,7 +9,6 @@ let a32 = document.getElementById('a32') ;
 let a33 = document.getElementById('a33') ;
 let turn = document.getElementById('turn') ;
 let submitBtn = document.getElementById('submitBtn') ;
-let box = document.getElementsByClassName('box');
 function startGame() {
     turn.textContent = `${document.getElementById('playerA').value} Turn`;
 }
@@ -19,6 +18,7 @@ function boxDisable() {
     document.getElementById("submitBtn").disabled = true;
     submitBtn.style.color = 'rgb(192, 192, 192)';
     submitBtn.style.pointerEvents = 'none';
+    turn.textContent = "Click on Start Game";
 }
 let player = 'A';
 function printXor0(tryBox) {
@@ -58,7 +58,4 @@ function winningStatus() {
     else {
         return 0;
     }
-}
-function pDetails() {
-    
 }

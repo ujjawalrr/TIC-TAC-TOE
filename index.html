@@ -19,54 +19,63 @@
 <body>
     <h1>Tic Tac Toe Game</h1>
     <div class="main">
-        <div class="container">
-            <div class="r1 row">
-                <div class="a11 box" id="a11" onclick="printXor0(a11)">
-                    
+        <div class="bigContainer">
+            <div class="container">
+                <div class="r1 row">
+                    <div class="a11 box" id="a11" onclick="printXor0(a11)">
+                        
+                    </div>
+                    <div class="a12 box" id="a12" onclick="printXor0(a12)">
+                        
+                    </div>
+                    <div class="a13 box" id="a13" onclick="printXor0(a13)">
+                        
+                    </div>
                 </div>
-                <div class="a12 box" id="a12" onclick="printXor0(a12)">
-                    
+                <div class="r2 row">
+                    <div class="a21 box" id="a21" onclick="printXor0(a21)">
+                        
+                    </div>
+                    <div class="a22 box" id="a22" onclick="printXor0(a22)">
+                        
+                    </div>
+                    <div class="a23 box" id="a23" onclick="printXor0(a23)">
+                        
+                    </div>
                 </div>
-                <div class="a13 box" id="a13" onclick="printXor0(a13)">
-                    
-                </div>
-            </div>
-            <div class="r2 row">
-                <div class="a21 box" id="a21" onclick="printXor0(a21)">
-                    
-                </div>
-                <div class="a22 box" id="a22" onclick="printXor0(a22)">
-                    
-                </div>
-                <div class="a23 box" id="a23" onclick="printXor0(a23)">
-                    
-                </div>
-            </div>
-            <div class="r3 row">
-                <div class="a31 box" id="a31" onclick="printXor0(a31)">
-                    
-                </div>
-                <div class="a32 box" id="a32" onclick="printXor0(a32)">
-                    
-                </div>
-                <div class="a33 box" id="a33" onclick="printXor0(a33)">
-                    
+                <div class="r3 row">
+                    <div class="a31 box" id="a31" onclick="printXor0(a31)">
+                        
+                    </div>
+                    <div class="a32 box" id="a32" onclick="printXor0(a32)">
+                        
+                    </div>
+                    <div class="a33 box" id="a33" onclick="printXor0(a33)">
+                        
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div class="info">
-            <h2>Enter Players' Name</h2>
-            <!-- <div class="pInfo">Enter Players' Name</div> -->
-            <input type="text" id="playerA" value="Player A">
-            <input type="text" id="playerB" value="Player B">
+            <div class="pInfo"><h2>Enter Players' Name</h2></div>
+            <div class="pName">
+                <input type="text" id="playerA" value="Player A">
+                <input type="text" id="playerB" value="Player B">
+            </div>
             <div class="submitBtn">
                 <button class="btn" id="submitBtn" onclick="boxDisable()">Submit</button>
             </div>
-            <h2>Game Status</h2>
-            <div class="turn" id="turn"></div>
-            <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
-            <button class="btn" onClick="window.location.reload()">Reset Game</button>
             
+            <div class="pInfo"><h2>Game Status</h2></div>
+            <div class="submitBtn">
+                <div class="turn" id="turn">Enter Player Details</div>
+            </div>
+            
+            <div class="pName">
+                <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
+                <button class="btn" onClick="window.location.reload()">Reset Game</button>
+            </div>
         </div>
     </div>
 
