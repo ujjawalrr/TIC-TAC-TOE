@@ -46,14 +46,22 @@ function next(player,tryBox) {
 function winningStatus() {
     let playerA = document.getElementById('playerA').value ;
     let playerB = document.getElementById('playerB').value ;
+    const music = new Audio('win.wav');
+    const draw = new Audio('draw.wav');
     if (((a11.textContent == 'X') && (a22.textContent == 'X') && (a33.textContent == 'X')) || ((a11.textContent == 'X') && (a12.textContent == 'X') && (a13.textContent == 'X')) || ((a11.textContent == 'X') && (a21.textContent == 'X') && (a31.textContent == 'X')) || ((a21.textContent == 'X') && (a22.textContent == 'X') && (a23.textContent == 'X')) || ((a31.textContent == 'X') && (a32.textContent == 'X') && (a33.textContent == 'X')) || ((a31.textContent == 'X') && (a22.textContent == 'X') && (a13.textContent == 'X')) || ((a12.textContent == 'X') && (a22.textContent == 'X') && (a32.textContent == 'X')) || ((a13.textContent == 'X') && (a23.textContent == 'X') && (a33.textContent == 'X'))) {
         turn.textContent = `${playerA} won`;
+        music.play();
+        music.loop =false;
     } 
     else if (((a11.textContent == 'O') && (a22.textContent == 'O') && (a33.textContent == 'O')) || ((a11.textContent == 'O') && (a12.textContent == 'O') && (a13.textContent == 'O')) || ((a11.textContent == 'O') && (a21.textContent == 'O') && (a31.textContent == 'O')) || ((a21.textContent == 'O') && (a22.textContent == 'O') && (a23.textContent == 'O')) || ((a31.textContent == 'O') && (a32.textContent == 'O') && (a33.textContent == 'O')) || ((a31.textContent == 'O') && (a22.textContent == 'O') && (a13.textContent == 'O')) || ((a12.textContent == 'O') && (a22.textContent == 'O') && (a32.textContent == 'O')) || ((a13.textContent == 'O') && (a23.textContent == 'O') && (a33.textContent == 'O'))) {
         turn.textContent = `${playerB} won`;
+        music.play();
+        music.loop =false;
     }
     else if(((a11.textContent== 'O') || (a11.textContent== 'X')) && ((a12.textContent== 'O') || (a12.textContent== 'X')) && ((a13.textContent== 'O') || (a13.textContent== 'X')) && ((a21.textContent== 'O') || (a21.textContent== 'X')) && ((a22.textContent== 'O') || (a22.textContent== 'X')) && ((a23.textContent== 'O') || (a23.textContent== 'X')) && ((a31.textContent== 'O') || (a31.textContent== 'X')) && ((a32.textContent== 'O') || (a32.textContent== 'X')) && ((a33.textContent== 'O') || (a33.textContent== 'X')) ) {
         turn.textContent = "Game Drawn";
+        draw.play();
+        draw.loop =false;
     }
     else {
         return 0;
