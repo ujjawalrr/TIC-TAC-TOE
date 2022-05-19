@@ -11,6 +11,10 @@ let turn = document.getElementById('turn') ;
 let submitBtn = document.getElementById('submitBtn') ;
 function startGame() {
     turn.textContent = `${document.getElementById('playerA').value} Turn`;
+    const start = new Audio('start.wav');
+    start.play();
+    start.loop =false;
+    start.playbackRate = 2;
 }
 function boxDisable() {
     document.getElementById("playerA").disabled = true;

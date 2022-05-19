@@ -39,6 +39,9 @@
     .turn {
         width: 70%;
     }
+    .box {
+        font-size: 20vw;
+    }
 }
 @media screen and (min-width : 810px) and (max-width : 1075px) {
     h1 {
@@ -86,6 +89,10 @@
     .turn {
         width: 25rem;
     }
+    .box {
+        font-size: 16vw;
+    }
+    
 }
 @media screen and (min-width : 1075px) {
     h1 {
@@ -127,6 +134,9 @@
     .turn {
         width: 25rem;
     }
+    .box {
+        font-size: 10vw;
+    }
 }
 
 * {
@@ -146,7 +156,6 @@ body {
     flex: 33.33%;
     justify-content: center;
     align-items: center;
-    font-size: 10vw;
     cursor: pointer;
 }
 .box:hover {
