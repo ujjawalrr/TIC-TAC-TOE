@@ -32,17 +32,28 @@ function next(player,tryBox) {
     let playerA = document.getElementById('playerA').value ;
     let playerB = document.getElementById('playerB').value ;
     if (player == 'A') {
-        tryBox.textContent = "X";
-        if (winningStatus() == 0) {
-            turn.textContent = `${playerB} Turn`;
-            return 'B';
+        if ((tryBox.textContent != "X") && (tryBox.textContent != "O")) {
+            tryBox.textContent = "X";
+            if (winningStatus() == 0) {
+                turn.textContent = `${playerB} Turn`;
+                return 'B';
+            }
+        }
+        else {
+            return 'A';
         }
     }
+    
     if (player == 'B') {
-        tryBox.textContent = "O";
-        if (winningStatus() == 0) {
-            turn.textContent = `${playerA} Turn`;
-            return 'A';
+        if ((tryBox.textContent != "X") && (tryBox.textContent != "O")) {
+            tryBox.textContent = "O";
+            if (winningStatus() == 0) {
+                turn.textContent = `${playerA} Turn`;
+                return 'A';
+            }
+        }
+        else {
+            return 'B';
         }
     }
 }
